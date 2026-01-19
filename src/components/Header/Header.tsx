@@ -4,7 +4,7 @@ import Header_Dropdown from "../Header_Dropdown/Header_Dropdown";
 const Header = () => {
 	return (
 		<header className="header">
-			<h1 className="logo">AFL Logo </h1>
+			<img src="/afl_logo_header.png" alt="Logo" className="logo" />
 
 			<nav className="nav">
 				
