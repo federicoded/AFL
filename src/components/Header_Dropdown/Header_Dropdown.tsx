@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Header_Dropdown.css";
 
 type MenuItem = { 
-    /// definimos cómo debe ser el item del menú, cada uno tiene una etiquera y puede tener opcionalmente un submenú
+    /// definimos cómo debe ser el item del menú, cada uno tiene una etiqueta y puede tener opcionalmente un submenú
     // Type es como una clase pero no se instancia ni tiene lógica, solo se usa para definir tipos de datos.
     label: string;
     submenu?: string[];
@@ -25,9 +25,9 @@ const Header_Dropdown = () => {
                 Servicios
             </div>
 
-            {open && ( ///ESTO ES UN CONDICIONAL, SI OPEN ES TRUE ENTONCES:
+            {open && ( 
                 <ul className="dropdown-menu">
-                    {menuItems.map(item => ( /// con map recorremos el array menuItems y por cada item generamos una lista li
+                    {menuItems.map(item => ( 
                         <li
                             key={item.label}
                             className="dropdown-item"
