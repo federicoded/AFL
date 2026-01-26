@@ -1,0 +1,7 @@
+.About_me-page{
+    padding:1rem 6rem 2rem 6rem;
+    background-color: white;
+    .AM_Head{
+        background-color: red;
+    }
+}
