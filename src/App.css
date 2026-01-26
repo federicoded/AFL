@@ -1,21 +1,9 @@
+/* LOS ESTILOS GLOBALES VAN EN INDEX.CSS*/
+/*Acá van los estilos específicos de la aplicación*/
 #root {
   width: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
   user-select: none;
-}
-
-header {
-  position: relative;
-  z-index: 1000;
-}
-
-.body {
-  max-height: 82vh;
-  overflow: auto;
-}
-
-button {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
