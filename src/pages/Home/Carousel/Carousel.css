@@ -6,7 +6,7 @@ body {
 
 .mySwiper {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 }
 
 .swiper-slide {
@@ -51,7 +51,7 @@ body {
       font-size: 1.5rem;
       padding: 0.5rem;
       padding-inline: 2.5rem;
-      color: #034aac;
+      color: #003887;
       font-weight: bold;
       transition: 500ms;
     }

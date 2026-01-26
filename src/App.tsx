@@ -1,27 +1,27 @@
-//import { useState } from 'react';
-import './App.css'
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer/Footer";
-import Carousel from "./components/Carousel/Carousel";
+import Home from "./pages/Home/Home";
+import FAQ from "./pages/FAQ/FAQ";
+import About_me from "./pages/About_me/About_me";
 
 function App() {
-
   return (
     <>
       <Header />
       <div className='body'>
-        <Carousel />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/about_me" element={<About_me />} />
+        </Routes>
         <Footer />
       </div>
 
     </>
-  )
+  );
 }
 
-export default App
-
-const sayHello = (name: string): string => { // se especifica que tipo de dato recibe esa variable
-  return `Hello, ${name}!`
-}
-
-console.log(sayHello('Fedeee'))
+export default App;

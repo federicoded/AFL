@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Header_Dropdown.css";
 
-type MenuItem = { 
+type MenuItem = {
     /// definimos cómo debe ser el item del menú, cada uno tiene una etiqueta y puede tener opcionalmente un submenú
     // Type es como una clase pero no se instancia ni tiene lógica, solo se usa para definir tipos de datos.
     label: string;
@@ -20,14 +20,16 @@ const Header_Dropdown = () => {
 
     return (
         <div className="dropdown"
-        onMouseLeave={() => setOpen(false)}>
-            <div className="dropdown-button" onMouseEnter={() => setOpen(!open)}>
+        >
+            <div className="dropdown-button" onClick={() => setOpen(!open)}>
                 Servicios
             </div>
 
-            {open && ( 
-                <ul className="dropdown-menu">
-                    {menuItems.map(item => ( 
+            {open && (
+                <ul className="dropdown-menu"
+                    onMouseLeave={() => setOpen(false)}
+                >
+                    {menuItems.map(item => (
                         <li
                             key={item.label}
                             className="dropdown-item"

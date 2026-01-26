@@ -8,26 +8,27 @@
   border: none;
   cursor: pointer;
   color: #034aac;
-  font-weight: bold;
+  font-weight: 650;
+  font-size: 1.5rem;
 }
 .dropdown:hover .dropdown-button {
   color: white;
+  margin:0;
+  padding:0;
 }
 
-
-
-/* Menú principal */
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
   list-style: none;
-  margin: 0.25rem 0 0;
+  margin: 0.25rem 0 0 0;
   padding: 0;
   background: white;
   border: 1px solid #ccc;
   color: #034aac;
-  min-width: 12rem;
+  font-weight: 550;
+  font-size: inherit;
 }
 
 .dropdown-item {
@@ -37,7 +38,7 @@
   white-space: nowrap;
 }
 .dropdown-item:hover {
-  background: #034aac;
+  background: #000e88;
   color: white;
 }
 
