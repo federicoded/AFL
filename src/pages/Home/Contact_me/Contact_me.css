@@ -1,0 +1,134 @@
+.CM_container {
+    height: 160vh;
+    background-color: white;
+    color: #01295f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cm_side {
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cm_photo {
+        position: absolute;
+        box-sizing: border-box;
+        top: 32%;
+        left: 30%;
+        width: 40%;
+        height: 40%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    .photo_rectangle {
+        background-color: #000e8879;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.cm_side.texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    padding-right: 4rem;
+
+    h1 {
+        width: 100%;
+        text-align: left;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        width: 100%;
+        text-align: left;
+        font-weight: normal;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.cm_buttons_container {
+    margin-top: 4rem;
+    width: 100%;
+    height: 4rem;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+
+    li {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    a {
+        color: #01295f;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        padding: 0.5rem;
+        padding-inline: 1rem;
+        padding-right: 1.5rem;
+        border-radius: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cm_button {
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        svg {
+            margin-right: 1rem;
+        }
+    }
+
+    .cm_button:hover {
+        background-color: #000e88;
+        color: white;
+        transform: scale(1.05);
+
+        svg {
+            fill: white;
+        }
+    }
+
+    .cm_button:active {
+        background-color: white;
+        color: #000e88;
+        transition: background-color 0.0s, transform 0.0s;
+        svg {
+            fill: #000e88;
+        }
+    }
+
+    .wpp {
+        color: #199d28;
+    }
+}
+.socials{
+    margin:2rem;
+    width: 20%;
+    padding-right: 3rem;
+    a{
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+}
