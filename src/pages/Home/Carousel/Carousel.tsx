@@ -20,7 +20,7 @@ const CAR_ITEMS: CarouselItem[] = [
     { question: "¿Necesitás ayuda para definir tu futuro académico?", image_link: "./home/home_slider/asesoramiento.png", image_alt: "alt missing", background_color: "#034aac" },
     { question: "¿Querés descubrir tus verdaderas aptitudes y motivaciones?", image_link: "./home/home_slider/objetivos.png", image_alt: "alt missing", background_color: "#000a4e" },
     { question: "¿Observas cambios en la escritura que llaman tu atención?", image_link: "./home/home_slider/nina_escribiendo.png", image_alt: "alt missing", background_color: "#046af8" },
-    { question: "¿Sabes qué dice tu firma manuscrita sobre tí?", image_link: "./home/home_slider/signing.png", image_alt: "alt missing", background_color: "#034aac" },
+    { question: "¿Querés saber qué dice tu firma manuscrita sobre tí?", image_link: "./home/home_slider/signing.png", image_alt: "alt missing", background_color: "#034aac" },
     { question: "¿Phasellus malesuada rutrum neque at egestas?", image_link: "./home/home_slider/nina_escribiendo.png", image_alt: "alt missing", background_color: "#000b67" },
     { question: "¿Morbi eleifend metus sed dolor mollis, imperdiet scelerisque?", image_link: "./home/home_slider/nina_escribiendo.png", image_alt: "alt missing", background_color: "#000a4e" },
 ];
