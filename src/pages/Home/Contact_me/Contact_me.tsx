@@ -40,7 +40,7 @@ const Contact_me = forwardRef<HTMLHeadingElement>((_, ref) => {
                     ))
                 }
                 <div className="cm_photo">
-                    <img src="./home/afl_persona.png" alt="Alejandra Fripp Lozano - Foto"></img>
+                    <img src="./afl_persona.png" alt="Alejandra Fripp Lozano - Foto"></img>
                 </div>
             </div>
             <div className="cm_side texts">
