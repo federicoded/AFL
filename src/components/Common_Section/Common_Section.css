@@ -1,0 +1,24 @@
+.content_section {
+    position: relative;
+    height: 90vh;
+    background-color: transparent;
+    color: #01295f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .right_side, .left_side {
+        height: 100%;
+        width:50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .bigger_side{
+        width: 60%;
+    }
+    .smaller_side{
+        width: 40%;
+    }
+}
