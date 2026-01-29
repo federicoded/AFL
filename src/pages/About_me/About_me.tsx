@@ -1,13 +1,13 @@
 import "./About_me.css";
 import "../../components/Common_Section/Common_Section";
-import Content_Section from "../../components/Common_Section/Common_Section";
+import Common_Section from "../../components/Common_Section/Common_Section";
 import Pre_footer from "../../components/Pre_footer/Pre_footer";
 
 const About_me = () => {
     return (
         <main>
             <div className="About_me-page">
-                <Content_Section
+                <Common_Section
                     left={
                         <>
                             <svg xmlns="http://www.w3.org/2000/svg" width="2783.376" height="1851.725" viewBox="0 0 736.435 489.936" className="Shape01">
@@ -68,7 +68,7 @@ const About_me = () => {
                     }
                     bigger_side="left"
                 />
-                <Content_Section
+                <Common_Section
                     left={
                         <>
                             <h1>Más de 20 años de experiencia como docente de nivel medio y superior.</h1>
@@ -212,7 +212,7 @@ const About_me = () => {
 
 
                 </div>
-                <Content_Section
+                <Common_Section
                     left ={
                         <>
                             <h2>Podes escucharme en Ahora Cero Radio FM</h2>
