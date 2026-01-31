@@ -2,6 +2,7 @@ import "./About_me.css";
 import "../../components/Common_Section/Common_Section";
 import Common_Section from "../../components/Common_Section/Common_Section";
 import Pre_footer from "../../components/Pre_footer/Pre_footer";
+import ReactPlayer from 'react-player';
 
 const About_me = () => {
     return (
@@ -184,7 +185,7 @@ const About_me = () => {
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                             </p>
                             <svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f" className="value_icon">
-                                <path d="M298-120v-60h152v-148q-54-11-96-46.5T296-463q-74-8-125-60t-51-125v-44q0-25 17.5-42.5T180-752h104v-88h392v88h104q25 0 42.5 17.5T840-692v44q0 73-51 125t-125 60q-16 53-58 88.5T510-328v148h152v60H298Zm-14-406v-166H180v44q0 45 29.5 78.5T284-526Zm196 141q57 0 96.5-40t39.5-97v-258H344v258q0 57 39.5 97t96.5 40Zm196-141q45-10 74.5-43.5T780-648v-44H676v166Zm-196-57Z" />
+                                <path d="M480-80q-140-35-230-162.5T160-522v-238l320-120 320 120v238q0 152-90 279.5T480-80Zm0-62q106-35 175.5-128.5T737-480H480v-335l-260 97v196q0 12 .5 20.5T223-480h257v338Z" />
                             </svg>
                         </li>
                         <li>
@@ -194,7 +195,7 @@ const About_me = () => {
                                 Aenean massa.
                             </p>
                             <svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f" className="value_icon">
-                                <path d="M80-120v-60h370v-484q-26-9-46.5-29.5T374-740H215l125 302q-1 45-38.5 76.5T210-330q-54 0-91.5-31.5T80-438l125-302h-85v-60h254q12-35 41-57.5t65-22.5q36 0 65 22.5t41 57.5h254v60h-85l125 302q-1 45-38.5 76.5T750-330q-54 0-91.5-31.5T620-438l125-302H586q-9 26-29.5 46.5T510-664v484h370v60H80Zm595-320h150l-75-184-75 184Zm-540 0h150l-75-184-75 184Zm345-280q21 0 35.5-15t14.5-35q0-21-14.5-35.5T480-820q-20 0-35 14.5T430-770q0 20 15 35t35 15Z" />
+                                <path d="M480.12-330q70.88 0 120.38-49.62t49.5-120.5q0-70.88-49.62-120.38T479.88-670Q409-670 359.5-620.38T310-499.88q0 70.88 49.62 120.38t120.5 49.5Zm-.36-58q-46.76 0-79.26-32.74-32.5-32.73-32.5-79.5 0-46.76 32.74-79.26 32.73-32.5 79.5-32.5 46.76 0 79.26 32.74 32.5 32.73 32.5 79.5 0 46.76-32.74 79.26-32.73 32.5-79.5 32.5Zm.24 188q-146 0-264-83T40-500q58-134 176-217t264-83q146 0 264 83t176 217q-58 134-176 217t-264 83Zm0-300Zm-.17 240Q601-260 702.5-325.5 804-391 857-500q-53-109-154.33-174.5Q601.34-740 480.17-740T257.5-674.5Q156-609 102-500q54 109 155.33 174.5Q358.66-260 479.83-260Z" />
                             </svg>
                         </li>
                         <li>
@@ -204,8 +205,7 @@ const About_me = () => {
                                 Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
                             </p>
                             <svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f" className="value_icon">
-                                <path d="m363-310 117-71 117 71-31-133 104-90-137-11-53-126-53 126-137 11 104 90-31 133ZM481-29 346-160H160v-186L26-480l134-134v-186h186l135-134 133 134h186v186l134 134-134 134v186H614L481-29Zm0-84 107.92-107H740v-151l109-109-109-109v-151H589L481-849 371-740H220v151L111-480l109 109v151h150l111 107Zm0-368Z" />
-                            </svg>
+                                <path d="M80-145v-304h304v304H80Zm60-60h184v-184H140v184Zm81-361 220-354 220 354H221Zm108-60h224L441-807 329-626ZM870-51 769-152q-22 15-48.11 23.5T666-120q-74 0-124-50t-50-124q0-74 50-124t124-50q74 0 124 50t50 124q0 28-7.52 52.5T811-196L913-94l-43 43ZM666.08-180Q714-180 747-213.08q33-33.09 33-81Q780-342 746.92-375q-33.09-33-81-33Q618-408 585-374.92q-33 33.09-33 81Q552-246 585.08-213q33.09 33 81 33ZM324-389Zm117-237Z" />                            </svg>
                         </li>
 
                     </ul>
@@ -213,17 +213,39 @@ const About_me = () => {
 
                 </div>
                 <Common_Section
-                    left ={
+                    left={
                         <>
-                            <h2>Podes escucharme en Ahora Cero Radio FM</h2>
-                            <img src="./about_me/ahora_cero_radio.png" className="ahora_cero_logo"></img>
-                            <p>Hola</p>
+                            <div className="radio_text">
+
+                                <a href="https://radiocerofm.com/" target="_blank" className="expand_animation">
+                                    <img src="./about_me/ahora_cero_radio.png" className="radio_logo"></img>
+                                </a>
+                                <a href="https://radiocerofm.com/" target="_blank" className="expand_animation">
+                                    <img src="./about_me/digamos_todo.jpg" className="radio_logo"></img>
+                                </a>
+
+                                
+                                <h2>
+                                    En el programa Digamos Todo podés escuchar mi columna de ESI.
+                                </h2>
+                                <p>
+                                    Un espacio donde traemos a la luz diversas problemáticas cotidianas relacionadas con la salud de las personas.
+                                </p>
+                            </div>
+
                         </>
                     }
-                    right ={
+                    right={
                         <>
-                            <h1>foto radio</h1>
-                            <p>Hola</p>
+                            <ReactPlayer src='https://www.youtube.com/watch?v=VZhLL__kmQ0'
+                                controls={false}
+                                style={{
+                                    width: "100%",
+                                    height: "auto",
+                                    aspectRatio: "16/9",
+
+                                }}
+                            />
                         </>
                     }
                 />
