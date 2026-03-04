@@ -5,22 +5,24 @@ import { Link } from "react-router-dom";
 const Header = () => {
 	return (
 		<header className="header">
-			<Link to="./">
+			<Link to="/" className="logo_container">
 				<img src="/afl_logo_header.png" alt="Logo" className="logo" />
 			</Link>
 
 
 			<nav className="nav">
-
 				<ul className="menu">
-					<li className="menu_item"><Header_Dropdown /></li>
-					<Link to="./faq">
+					<li className="menu_item menu_item_no_transition"><Header_Dropdown /></li>
+					<Link to="/faq">
 						<li className="menu_item">
 							Preguntas frecuentes
 						</li>
 					</Link>
-					<Link to="./about_me">
+					<Link to="/about_me">
 						<li className="menu_item">Sobre mí</li>
+					</Link>
+					<Link to="/#contact_me">
+						<li className="menu_item">Contactame</li>
 					</Link>
 
 				</ul>

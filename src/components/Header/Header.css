@@ -1,46 +1,202 @@
+/* Mobile */
 .header {
+    position: sticky;
+    top: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     box-sizing: border-box;
-    padding: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0;
     width: 100%;
+    height: auto;
     background-color: white;
     color: #034aac;
-    padding-inline: 3rem;
-}
-
-.logo {
-    font-size: 2rem;
-    margin: 0;
-    height: 6rem;
-    width: auto;
-}
-
-.nav {
+    justify-content: center;
     align-items: center;
+    gap: 1dvh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    .logo_container {
+        margin-top: 2dvh;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .logo {
+            margin: 0;
+            align-self: flex-end;
+            height: 8dvh;
+        }
+    }
+
+    .nav {
+        display: block;
+        height: 100%;
+
+        .menu {
+            height: 100%;
+            list-style: none;
+            display: flex;
+            gap: 0;
+            flex-wrap: wrap;
+            align-items: center;
+            font-weight: 600;
+            margin: 0;
+            padding: 0;
+
+            .menu_item {
+                white-space: nowrap;
+                cursor: pointer;
+                font-size: 1rem;
+                padding: 0.5dvh 0.5dvw;
+                justify-content: center;
+                width: 48.5dvw;
+                transition: 0.2s linear;
+            }
+
+            .menu_item:hover {
+                background-color: #000e88;
+                color: white;
+                font-weight: 650;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                transform: scale(1.05);
+            }
+
+            .menu_item:active {
+                background-color: #000e88;
+                color: white;
+                font-weight: 650;
+                transform: scale(1);
+                transition: 0s;
+            }
+
+            .menu_item_no_transition {
+                transform: none;
+                transition: none;
+            }
+
+            .menu_item_no_transition:hover {
+                transform: none;
+            }
+
+            .menu_item_no_transition:active {
+                transform: none;
+            }
+        }
+    }
 }
 
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 6rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
+/* Tablets chicas 
+@media (min-aspect-ratio: 1/2) {
+    .header {
+        height: 12dvh;
+
+        .logo_container {
+            height: 60%;
+            margin-top: 0;
+
+            .logo {
+                margin: 0;
+                align-self: flex-end;
+                height: 90%;
+            }
+        }
+
+        .nav {
+            height: 50%;
+
+            .menu {
+                gap: 0.5dvw;
+
+                .menu_item {
+                    font-size: 1.2rem;
+                    width: 23dvw;
+                    border-radius: 0.5rem;
+                }
+            }
+
+        }
+
+    }
+}
+*/
+/* Pantallas cuadradas */
+@media (min-aspect-ratio: 1/1) {
+    .header {
+        flex-direction: row;
+
+        .logo_container {
+            padding:1rem;
+        }
+
+
+        .nav {
+            height: auto;
+            align-items: center;
+            width: 65%;
+
+            .menu {
+                width: 100%;
+                gap: 1%;
+                height: fit-content;
+
+                .menu_item {
+                    width: 30dvw;
+                    cursor: pointer;
+                    font-size: 1.4rem;
+                    border-radius: 0.8rem;
+                    transition: 0.2s linear;
+
+                }
+
+            }
+
+
+        }
+
+    }
 }
 
-.menu_item {
-    cursor: pointer;
-    padding: 1rem;
-    border-radius: 1rem;
-}
+@media (min-aspect-ratio: 38/29) {
 
-.menu_item:hover {
-    background-color: #000e88;
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    .header {
+        flex-direction: row;
+        padding: 0;
+        padding-inline: 3%;
+        justify-content: space-between;
+        justify-content: start;
+        gap: 6%;
+
+        .logo_container {
+            height: 75%;
+            justify-content: start;
+            margin: 0;
+            width: 20%;
+        }
+
+
+        .nav {
+            width: 70%;
+
+            .menu {
+                width: 100%;
+                justify-content: space-between;
+                height: fit-content;
+
+                .menu_item {
+                    width: fit-content;
+                    cursor: pointer;
+                    font-size: 1.3rem;
+                    padding: 0.5rem 1.5rem;
+                    border-radius: 0.8rem;
+                    transition: 0.2s linear;
+
+                }
+
+            }
+
+
+        }
+
+    }
 }

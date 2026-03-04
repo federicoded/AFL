@@ -1,5 +1,6 @@
 import "./FAQ.css";
 import Accordion from "./Accordion/Accordion";
+import {useScrollToTag} from "../../hooks/useScrollTo";
 
 type FA_question = {
     question: string;
@@ -43,11 +44,12 @@ const FA_questions: FA_question[] = [
 ];
 
 const FAQ = () => {
+    useScrollToTag();
     return (
         <main>
-            <div className="faq-page">
+            <div className="faq_page" id="first_element">
                 <h1>Preguntas frecuentes</h1>
-                <div className="faq-container">
+                <div className="faq_container">
 
                     <Accordion items={FA_questions} />
                 </div>

@@ -1,13 +1,41 @@
-.faq-page{
+.faq_page {
     background-color: white;
-    margin:0;
+    margin: 0;
     padding: 0;
+
+    .faq_container {
+        width: 100%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 2rem;
+        margin: 0;
+    }
 }
-.faq-container{
-    width: 100%;
-    margin: auto;
+
+
+/* Tablets verticales / intermedio */
+@media (min-aspect-ratio: 67/89) {
+     .faq_page {
+
+        .faq_container {
+            width: 100%;
+            min-height: 67dvh;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            padding: 2rem;
+            margin: 0;
+        }
+    }
 }
-h1{
-    padding: 2%;
-    margin:0;
-}
+
+/* Pantallas cuadradas */
+@media (min-aspect-ratio: 1/1) {}
+
+/* Desktop wide */
+@media (min-aspect-ratio: 38/29) {}

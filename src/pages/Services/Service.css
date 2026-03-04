@@ -1,0 +1,213 @@
+.service_page {
+    padding: 0;
+
+    .service_swiper {
+        position: relative;
+        height: auto;
+        overflow: hidden;
+
+        .parallax-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 130%;
+            height: 100%;
+            z-index: 0;
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .swiper-slide {
+            height: auto;
+            background: none;
+            color: #FFFFFF;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+
+            .slide_content_bg {
+                background-color: #000e88c3;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 1rem;
+
+                .slide_content {
+                    text-shadow: 0.1rem 0.1rem 0.1rem #000000;
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .service_items {
+
+                    p {
+                        text-align: left;
+                        font-size: 1rem;
+                        line-height: 1.1rem;
+                        padding: 0;
+                        margin: 0.4rem;
+                    }
+                }
+
+
+                .service_cards_container {
+                    list-style: none;
+                    padding: 0;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    height: auto;
+                    gap: 1.5rem;
+
+                    .service_card {
+                        box-sizing: border-box;
+                        background-color: #FFF;
+                        border-radius: 1rem;
+                        padding: 0.5rem;
+                        width: 100%;
+                        color: #01295f;
+                        text-shadow: none;
+                        box-shadow: 0.3rem 0.3rem 0.5rem 0.1rem #000000a7;
+
+                        h3 {
+                            margin: 0;
+                            font-size: 1.2rem;
+                        }
+
+                        .card_icon {
+                            width: 1rem;
+                            margin: 0;
+                        }
+
+                        .card_list {
+                            text-align: left;
+                            font-size: 1rem;
+                            line-height: 1rem;
+
+                            li {
+                                font-weight: 550;
+                                margin-top: 0.2rem;
+                                margin-bottom: 0.2rem;
+                                font-size: 0.8rem;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .service_title {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+}
+
+@media (min-aspect-ratio: 1/1) {
+    .service_page {
+        padding: 0;
+
+        .service_swiper {
+            position: relative;
+            height: 60dvh;
+            overflow: hidden;
+
+            .parallax-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 130%;
+                height: 100%;
+                z-index: 0;
+
+                background-size: cover;
+                background-position: center;
+            }
+
+            .swiper-slide {
+                background: none;
+                color: #FFFFFF;
+                position: relative;
+                z-index: 1;
+                display: flex;
+                box-sizing: border-box;
+                align-items: center;
+
+                .slide_content_bg {
+                    background-color: #000e88c3;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 1rem;
+
+                    .slide_content {
+                        text-shadow: 0.1rem 0.1rem 0.1rem #000000;
+                        width: 80%;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+
+                    p {
+                        text-align: left;
+                        font-size: 1.5rem;
+                        padding: 0;
+                        margin: 0.4rem;
+                    }
+
+                    .service_cards_container {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        width: 100%;
+                        gap: 5%;
+
+                        .service_card {
+                            background-color: #FFF;
+                            border-radius: 1rem;
+                            padding: 0.5rem;
+                            width: 30%;
+                            color: #01295f;
+                            text-shadow: none;
+                            box-shadow: 0.3rem 0.3rem 0.5rem 0.1rem #000000a7;
+
+                            .card_icon {
+                                width: 15%;
+
+                            }
+
+                            .card_list {
+                                text-align: left;
+                                font-size: 1.1rem;
+                                line-height: 1.1rem;
+
+                                li {
+                                    font-weight: 550;
+                                    margin-top: 0.5rem;
+                                    margin-bottom: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .service_title {
+            font-size: 2.5rem;
+        }
+    }
+
+}
