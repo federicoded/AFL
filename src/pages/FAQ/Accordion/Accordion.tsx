@@ -20,13 +20,15 @@ const Accordion = ({ items }: AccordionProps) => {
     return (
         <div className="accordion">
             {items.map((item, index) => (
-                <div className="accordion-item" key={index}>
+                <div className={openIndex === index ? "accordion-item open" : "accordion-item"} key={index}>
                     <div
                         className="accordion-header"
                         onClick={() => toggle(index)}
                         aria-expanded={openIndex === index}
                     >
-                        {item.question}
+                        <h3>
+                            {item.question}
+                        </h3>
                         <span className="accordion-icon">
                             {openIndex === index ? "▲" : "▼"}
                         </span>
@@ -34,7 +36,9 @@ const Accordion = ({ items }: AccordionProps) => {
 
                     {openIndex === index && (
                         <div className="accordion-content">
-                            {item.answer}
+                            <p>
+                                {item.answer}
+                            </p>
                         </div>
                     )}
                 </div>

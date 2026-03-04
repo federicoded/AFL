@@ -1,235 +1,266 @@
 import "./About_me.css";
-import "../../components/Common_Section/Common_Section";
 import Common_Section from "../../components/Common_Section/Common_Section";
+import Mini_Section from "../../components/Mini_Section/Mini_Section";
 import Pre_footer from "../../components/Pre_footer/Pre_footer";
 import ReactPlayer from 'react-player';
+import { useScrollToTag } from "../../hooks/useScrollTo";
+import Core_Values_Section from "./Core_Values/Core_Values";
+
+
 
 const About_me = () => {
+
+    useScrollToTag()
     return (
-        <main>
-            <div className="About_me-page">
+        <main className="page">
+            <div className="About_me_page">
                 <Common_Section
-                    left={
+                    id="first_element"
+                    className="about_me_intro"
+                    full_content={
                         <>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="2783.376" height="1851.725" viewBox="0 0 736.435 489.936" className="Shape01">
-                                <defs>
-                                    <filter id="shape01_a" width="1.009" height="1.264" x="-.002" y="-.128">
-                                        <feFlood flood-color="#000" flood-opacity=".498" result="flood" />
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="0.4 25.425" />
-                                        <feOffset dx="2.5" dy="3.4" in="blur" result="offset" />
-                                        <feComposite in="flood" in2="offset" operator="in" result="comp1" />
-                                        <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
-                                    </filter>
-                                    <filter id="shape01_b" width="1.006" height="1.299" x="-.001" y="-.144">
-                                        <feFlood flood-color="#1c1c1c" flood-opacity=".376" result="flood" />
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="0.4 17.068" />
-                                        <feOffset dx="2.5" dy="3.4" in="blur" result="offset" />
-                                        <feComposite in="flood" in2="offset" operator="in" result="comp1" />
-                                        <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
-                                    </filter>
-                                    <filter id="shape01_c" width="1.174" height="1.27" x="-.083" y="-.128" >
-                                        <feFlood flood-color="#1c1c1c" flood-opacity=".376" result="flood" />
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="9.623 12.853" />
-                                        <feOffset dx="2.5" dy="3.4" in="blur" result="offset" />
-                                        <feComposite in="flood" in2="offset" operator="in" result="comp1" />
-                                        <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
-                                    </filter>
-                                    <filter id="shape01_d" width="1.12" height="1.19" x="-.05" y="-.09" className="filter">
-                                        <feFlood flood-color="#000" flood-opacity=".5" result="flood" />
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="5.698 9.997" />
-                                        <feOffset dx="2.5" dy="3.4" in="blur" result="offset" />
-                                        <feComposite in="flood" in2="offset" operator="in" result="comp1" />
-                                        <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
-                                    </filter>
-                                </defs>
-                                <g transform="translate(-38.173 -44.951)">
-                                    <path className="shape s1" d="M371.455 175.053c-17.438 61.501-3.786 146.531-59.164 178.464-53.8 31.022-118.051-24.896-177.799-41.837-61.5-17.437-146.53-3.786-178.463-59.164-31.022-53.799 24.896-118.05 41.836-177.798 17.437-61.5 3.786-146.531 59.164-178.463 53.8-31.022 118.051 24.896 177.799 41.836 61.5 17.437 146.53 3.786 178.463 59.164 31.022 53.8-24.896 118.051-41.836 177.798" transform="matrix(.80702 0 0 .74643 218.459 216.052)" filter="url(#shape01_a)" />
-                                    <path className="shape s2" d="M712.085 185.22c29.296-7.11 75.29-1.96 79.242 35.223 13.944 79.768-20.638 167.257-87.318 213.615-31.317 18.964-67.608 2.008-100.72-1.595C414.559 398.858 608.15 594.253 84 315.022c-60.983-38.75-5.774-50.989 25.034-53.66 200.899-26.215 400.767-61.698 603.05-76.142" transform="matrix(.95942 -.08757 .0655 .80772 -24.417 89.841)" filter="url(#shape01_b)" />
-                                    <ellipse className="shape s3" cx="266.85" cy="147.301" rx="139.829" ry="120.616" transform="matrix(.91873 0 0 .97212 47.14 51.653)" filter="url(#shape01_c)" />
-                                    <path className="shape s4" d="M571.534 335.823c-8.808 21.66-63.436 56.297-86.616 53.225-37.32-4.946-117.795-53.575-140.906-83.294-14.353-18.458-17.036-83.086-2.786-101.624 22.944-29.848 105.295-75.227 142.587-80.382 23.163-3.201 80.473 26.79 89.403 48.4 14.377 34.793 12.5 128.8-1.682 163.675" transform="matrix(1.36524 0 0 1.20486 -118.219 -61.335)" filter="url(#shape01_d)" />
-                                    <circle cx="134.726" cy="263.79" r="10.944" className="circulito" />
-                                    <circle cx="455.486" cy="59.524" r="10.944" className="circulito" />
-                                    <circle cx="557.822" cy="482.592" r="10.944" className="circulito" />
-                                    <circle cx="249.478" cy="474.245" r="10.944" className="circulito" />
-                                </g>
-                            </svg>
-
-                            <div className="afl_photo">
-                                <img src="./afl_persona2.png" alt="Alejandra Fripp Lozano - Foto" className="" />
+                            <div className="intro_text">
+                                <h1>Mi nombre es <br></br><span className="afl_name">Alejandra Fripp Lozano</span></h1>
+                                <h2>Soy Técnica Superior en Grafología</h2>
+                                <p>
+                                    Atiendo cada demanda con compromiso, seriedad y dedicación, lo que hace de esta práctica una experiencia sumamente gratificante.
+                                </p>
                             </div>
+                            <div className="afl_photo_container">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 736.435 489.936" className="Shape01">
+                                    <defs>
+                                        <filter id="shape01_a" width="1.009" height="1.264" x="-.002" y="-.128">
+                                            <feFlood flood-color="#000" flood-opacity=".498" result="flood" />
+                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="0.4 25.425" />
+                                            <feOffset dx="2.5" dy="3.4" in="blur" result="offset" />
+                                            <feComposite in="flood" in2="offset" operator="in" result="comp1" />
+                                            <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
+                                        </filter>
+                                        <filter id="shape01_b" width="1.006" height="1.299" x="-.001" y="-.144">
+                                            <feFlood flood-color="#1c1c1c" flood-opacity=".376" result="flood" />
+                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="0.4 17.068" />
+                                            <feOffset dx="2.5" dy="3.4" in="blur" result="offset" />
+                                            <feComposite in="flood" in2="offset" operator="in" result="comp1" />
+                                            <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
+                                        </filter>
+                                        <filter id="shape01_c" width="1.174" height="1.27" x="-.083" y="-.128" >
+                                            <feFlood flood-color="#1c1c1c" flood-opacity=".376" result="flood" />
+                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="9.623 12.853" />
+                                            <feOffset dx="2.5" dy="3.4" in="blur" result="offset" />
+                                            <feComposite in="flood" in2="offset" operator="in" result="comp1" />
+                                            <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
+                                        </filter>
+                                        <filter id="shape01_d" width="1.12" height="1.19" x="-.05" y="-.09" className="filter">
+                                            <feFlood flood-color="#000" flood-opacity=".5" result="flood" />
+                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="5.698 9.997" />
+                                            <feOffset dx="2.5" dy="3.4" in="blur" result="offset" />
+                                            <feComposite in="flood" in2="offset" operator="in" result="comp1" />
+                                            <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
+                                        </filter>
+                                    </defs>
+                                    <g transform="translate(-38.173 -44.951)">
+                                        <path className="shape s1" d="M371.455 175.053c-17.438 61.501-3.786 146.531-59.164 178.464-53.8 31.022-118.051-24.896-177.799-41.837-61.5-17.437-146.53-3.786-178.463-59.164-31.022-53.799 24.896-118.05 41.836-177.798 17.437-61.5 3.786-146.531 59.164-178.463 53.8-31.022 118.051 24.896 177.799 41.836 61.5 17.437 146.53 3.786 178.463 59.164 31.022 53.8-24.896 118.051-41.836 177.798" transform="matrix(.80702 0 0 .74643 218.459 216.052)" filter="url(#shape01_a)" />
+                                        <path className="shape s2" d="M712.085 185.22c29.296-7.11 75.29-1.96 79.242 35.223 13.944 79.768-20.638 167.257-87.318 213.615-31.317 18.964-67.608 2.008-100.72-1.595C414.559 398.858 608.15 594.253 84 315.022c-60.983-38.75-5.774-50.989 25.034-53.66 200.899-26.215 400.767-61.698 603.05-76.142" transform="matrix(.95942 -.08757 .0655 .80772 -24.417 89.841)" filter="url(#shape01_b)" />
+                                        <ellipse className="shape s3" cx="266.85" cy="147.301" rx="139.829" ry="120.616" transform="matrix(.91873 0 0 .97212 47.14 51.653)" filter="url(#shape01_c)" />
+                                        <path className="shape s4" d="M571.534 335.823c-8.808 21.66-63.436 56.297-86.616 53.225-37.32-4.946-117.795-53.575-140.906-83.294-14.353-18.458-17.036-83.086-2.786-101.624 22.944-29.848 105.295-75.227 142.587-80.382 23.163-3.201 80.473 26.79 89.403 48.4 14.377 34.793 12.5 128.8-1.682 163.675" transform="matrix(1.36524 0 0 1.20486 -118.219 -61.335)" filter="url(#shape01_d)" />
+                                        <circle cx="134.726" cy="263.79" r="10.944" className="circulito" />
+                                        <circle cx="455.486" cy="59.524" r="10.944" className="circulito" />
+                                        <circle cx="557.822" cy="482.592" r="10.944" className="circulito" />
+                                        <circle cx="249.478" cy="474.245" r="10.944" className="circulito" />
+                                    </g>
+                                </svg>
 
-                        </>
-                    }
-                    right={
-                        <>
-                            <h1>Mi nombre es <br></br><span className="afl_name">Alejandra Fripp Lozano</span></h1>
-                            <h2>Soy técnica superior en grafología</h2>
-                            <p>Lorem ipsum dolor sit amet. Est excepturi odio ut rerum quas in suscipit magnam? Et aliquam libero qui nihil totam qui omnis odio vel odio quia est itaque tenetur non earum culpa.</p>
-                        </>
-                    }
-                    bigger_side="left"
-                />
-                <Common_Section
-                    left={
-                        <>
-                            <h1>Más de 20 años de experiencia como docente de nivel medio y superior.</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-                            </p>
-                        </>
-                    }
-                    right={
-                        <>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 555.04 533.71" className="flower_shape">
-                                <defs>
-                                    <filter id="flower_a" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
-                                        <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
-                                        <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
-                                        <feComposite in="flood" in2="offset" operator="in" result="comp1" />
-                                        <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
-                                    </filter>
-                                    <filter id="flower_b" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
-                                        <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
-                                        <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
-                                        <feComposite in="flood" in2="offset" operator="in" result="comp1" />
-                                        <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
-                                    </filter>
-                                    <filter id="flower_c" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
-                                        <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
-                                        <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
-                                        <feComposite in="flood" in2="offset" operator="in" result="comp1" />
-                                        <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
-                                    </filter>
-                                    <filter id="flower_d" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
-                                        <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
-                                        <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
-                                        <feComposite in="flood" in2="offset" operator="in" result="comp1" />
-                                        <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
-                                    </filter>
-                                    <filter id="flower_e" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
-                                        <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
-                                        <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
-                                        <feComposite in="flood" in2="offset" operator="in" result="comp1" />
-                                        <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
-                                    </filter>
-                                    <filter id="flower_f" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
-                                        <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
-                                        <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
-                                        <feComposite in="flood" in2="offset" operator="in" result="comp1" />
-                                        <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
-                                    </filter>
-                                </defs>
-                                <g fill="#0047bf" fill-opacity=".51">
-                                    <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_a)" transform="matrix(-.63 -.76 .77 -.43 388.71 623.46)" />
-                                    <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_b)" transform="matrix(.13 -.73 1.04 .06 61.21 561.04)" />
-                                    <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_c)" transform="matrix(.04 -1 .99 .27 108.6 749.85)" />
-                                    <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_d)" transform="matrix(.6 -.29 .6 .78 -262.3 103.73)" />
-                                    <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_e)" transform="matrix(-.96 .07 .16 -.7 558.86 433.1)" />
-                                    <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_f)" transform="matrix(-.56 .83 -.75 -.37 669.57 65.76)" />
-                                </g>
-                            </svg>
-                            <div className="afl_photo flower_photo">
-                                <img src="./about_me/presentando_01.jpeg" alt="Alejandra Fripp Lozano - Foto" className="" />
+                                <div className="afl_photo">
+                                    <img src="/afl_persona2.png" alt="Foto de Alejandra Fripp Lozano" className="" />
+                                </div>
+
                             </div>
+                            <p className="intro_context">
+                                La grafología es una pasión que he desarrollado mediante diversas capacitaciones a lo largo de mi trayectoria docente y que actualmente ejerzo en un espacio específico, profundizando en el grafoanálisis dentro del maravilloso mundo de la escritura personal.
+                            </p>
                         </>
-
-
                     }
-                    bigger_side="right"
                 />
-                <div className="c_section core_values">
-                    <h1>Mis valores</h1>
 
-                    <ul>
-                        <li>
-                            <h3>Excelencia</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                <Mini_Section
+                    className="quote_container"
+                    content={
+                        <>
+                            <h3 className="quote">
+                                "Escribir es un acto humano, al igual que la lectura. En los trazos de una persona se pueden analizar aspectos de su personalidad y así, brindar posibles abordajes para mejorar su calidad de vida."
+                            </h3>
+                            <p className="hidden_mobile">
+                                Cuando llegó a mis manos mi primer material de Grafología Infanti en 2001, me sentí maravillada al saber que se pueden conocer aspectos de la personalidad de un niño a través del análisis de sus trazos, su evolución y cómo usa los colores.
+                                A partir de ese momento comencé a formarme a través de capacitaciones, cursos y adquiriendo material de lectura para aprender de manera autodidacta hasta el año 2020, cuando se abrió la posibilidad de estudiar esta carrera formalmente.
                             </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f" className="value_icon">
-                                <path d="M298-120v-60h152v-148q-54-11-96-46.5T296-463q-74-8-125-60t-51-125v-44q0-25 17.5-42.5T180-752h104v-88h392v88h104q25 0 42.5 17.5T840-692v44q0 73-51 125t-125 60q-16 53-58 88.5T510-328v148h152v60H298Zm-14-406v-166H180v44q0 45 29.5 78.5T284-526Zm196 141q57 0 96.5-40t39.5-97v-258H344v258q0 57 39.5 97t96.5 40Zm196-141q45-10 74.5-43.5T780-648v-44H676v166Zm-196-57Z" />
-                            </svg>
-                        </li>
-                        <li>
-                            <h3>Integridad y Ética</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa.
-                            </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f" className="value_icon">
-                                <path d="M80-120v-60h370v-484q-26-9-46.5-29.5T374-740H215l125 302q-1 45-38.5 76.5T210-330q-54 0-91.5-31.5T80-438l125-302h-85v-60h254q12-35 41-57.5t65-22.5q36 0 65 22.5t41 57.5h254v60h-85l125 302q-1 45-38.5 76.5T750-330q-54 0-91.5-31.5T620-438l125-302H586q-9 26-29.5 46.5T510-664v484h370v60H80Zm595-320h150l-75-184-75 184Zm-540 0h150l-75-184-75 184Zm345-280q21 0 35.5-15t14.5-35q0-21-14.5-35.5T480-820q-20 0-35 14.5T430-770q0 20 15 35t35 15Z" />
-                            </svg>
-                        </li>
-                        <li>
-                            <h3>Profesionalismo</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
-                            </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f" className="value_icon">
-                                <path d="m363-310 117-71 117 71-31-133 104-90-137-11-53-126-53 126-137 11 104 90-31 133ZM481-29 346-160H160v-186L26-480l134-134v-186h186l135-134 133 134h186v186l134 134-134 134v186H614L481-29Zm0-84 107.92-107H740v-151l109-109-109-109v-151H589L481-849 371-740H220v151L111-480l109 109v151h150l111 107Zm0-368Z" />
-                            </svg>
-                        </li>
 
-                    </ul>
-                    <ul>
-                        <li>
-                            <h3>Confidencialidad</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f" className="value_icon">
-                                <path d="M480-80q-140-35-230-162.5T160-522v-238l320-120 320 120v238q0 152-90 279.5T480-80Zm0-62q106-35 175.5-128.5T737-480H480v-335l-260 97v196q0 12 .5 20.5T223-480h257v338Z" />
-                            </svg>
-                        </li>
-                        <li>
-                            <h3>Transparencia</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa.
-                            </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f" className="value_icon">
-                                <path d="M480.12-330q70.88 0 120.38-49.62t49.5-120.5q0-70.88-49.62-120.38T479.88-670Q409-670 359.5-620.38T310-499.88q0 70.88 49.62 120.38t120.5 49.5Zm-.36-58q-46.76 0-79.26-32.74-32.5-32.73-32.5-79.5 0-46.76 32.74-79.26 32.73-32.5 79.5-32.5 46.76 0 79.26 32.74 32.5 32.73 32.5 79.5 0 46.76-32.74 79.26-32.73 32.5-79.5 32.5Zm.24 188q-146 0-264-83T40-500q58-134 176-217t264-83q146 0 264 83t176 217q-58 134-176 217t-264 83Zm0-300Zm-.17 240Q601-260 702.5-325.5 804-391 857-500q-53-109-154.33-174.5Q601.34-740 480.17-740T257.5-674.5Q156-609 102-500q54 109 155.33 174.5Q358.66-260 479.83-260Z" />
-                            </svg>
-                        </li>
-                        <li>
-                            <h3>Rigor científico</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
-                            </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="3rem" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f" className="value_icon">
-                                <path d="M80-145v-304h304v304H80Zm60-60h184v-184H140v184Zm81-361 220-354 220 354H221Zm108-60h224L441-807 329-626ZM870-51 769-152q-22 15-48.11 23.5T666-120q-74 0-124-50t-50-124q0-74 50-124t124-50q74 0 124 50t50 124q0 28-7.52 52.5T811-196L913-94l-43 43ZM666.08-180Q714-180 747-213.08q33-33.09 33-81Q780-342 746.92-375q-33.09-33-81-33Q618-408 585-374.92q-33 33.09-33 81Q552-246 585.08-213q33.09 33 81 33ZM324-389Zm117-237Z" />                            </svg>
-                        </li>
+                        </>
+                    }
+                />
+                <div className="xp_container">
+                    <Common_Section
+                        className="xp"
+                        left={
+                            <>
+                                <div className="xp_content">
+                                    <h2 className="xp_title"><span className="year">25 años</span> de experiencia en docencia de nivel medio y superior.</h2>
+                                    <p className="xp_text">
+                                        Actualmente, me desempeño como docente de nivel secundario y superior en la localidad de Gualeguaychú, Entre Ríos.
+                                    </p>
+                                </div>
+                            </>
+                        }
+                        right={
+                            <>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 555.04 533.71" className="flower_shape">
+                                    <defs>
+                                        <filter id="flower_a" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
+                                            <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
+                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
+                                            <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
+                                            <feComposite in="flood" in2="offset" operator="in" result="comp1" />
+                                            <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
+                                        </filter>
+                                        <filter id="flower_b" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
+                                            <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
+                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
+                                            <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
+                                            <feComposite in="flood" in2="offset" operator="in" result="comp1" />
+                                            <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
+                                        </filter>
+                                        <filter id="flower_c" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
+                                            <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
+                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
+                                            <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
+                                            <feComposite in="flood" in2="offset" operator="in" result="comp1" />
+                                            <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
+                                        </filter>
+                                        <filter id="flower_d" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
+                                            <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
+                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
+                                            <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
+                                            <feComposite in="flood" in2="offset" operator="in" result="comp1" />
+                                            <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
+                                        </filter>
+                                        <filter id="flower_e" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
+                                            <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
+                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
+                                            <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
+                                            <feComposite in="flood" in2="offset" operator="in" result="comp1" />
+                                            <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
+                                        </filter>
+                                        <filter id="flower_f" width="1.08" height="1.07" x="-.03" y="-.03" color-interpolation-filters="sRGB">
+                                            <feFlood flood-color="#1c1c1c" flood-opacity=".38" result="flood" />
+                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.5" />
+                                            <feOffset dx="2.5" dy="2.5" in="blur" result="offset" />
+                                            <feComposite in="flood" in2="offset" operator="in" result="comp1" />
+                                            <feComposite in="SourceGraphic" in2="comp1" result="comp2" />
+                                        </filter>
+                                    </defs>
+                                    <g fill="#0047bf" fill-opacity=".51">
+                                        <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_a)" transform="matrix(-.63 -.76 .77 -.43 388.71 623.46)" />
+                                        <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_b)" transform="matrix(.13 -.73 1.04 .06 61.21 561.04)" />
+                                        <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_c)" transform="matrix(.04 -1 .99 .27 108.6 749.85)" />
+                                        <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_d)" transform="matrix(.6 -.29 .6 .78 -262.3 103.73)" />
+                                        <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_e)" transform="matrix(-.96 .07 .16 -.7 558.86 433.1)" />
+                                        <path d="M571.53 335.82c-8.8 21.66-63.43 56.3-86.61 53.23-37.32-4.95-117.8-53.58-140.9-83.3-14.36-18.45-17.04-83.08-2.8-101.62 22.95-29.85 105.3-75.23 142.6-80.38 23.16-3.2 80.47 26.79 89.4 48.4 14.37 34.8 12.5 128.8-1.69 163.67" filter="url(#flower_f)" transform="matrix(-.56 .83 -.75 -.37 669.57 65.76)" />
+                                    </g>
+                                </svg>
+                                <div className="flower_photo">
+                                    <img src="/about_me/presentando_01.jpg" alt="Alejandra Fripp Lozano - Foto" className="" />
+                                </div>
+                            </>
 
-                    </ul>
 
+                        }
+                        bigger_side="right"
+                    />
+                    <Common_Section
+                        className="xp"
+                        bigger_side="right"
+                        left={
+                            <>
+                                <div className="afl_photo">
+                                    <img src="/about_me/capacitando.jpeg" alt="Alejandra Fripp Lozano - Foto" className="" />
+                                </div>
+                            </>
+                        }
+                        right={
+                            <>
+                                <div className="xp_content">
+                                    <h2 className="xp_title">Más de 8 años capacitando docentes.</h2>
+                                    <p className="xp_text">
+                                        Formo parte del equipo técnico de ESI (Educación Sexual Integral), Abordaje de situaciones complejas en el ámbito educativo y Prevención de Consumos Problemáticos en la Dirección Departamental de Escuelas de Gualeguaychú.
 
+                                    </p>
+                                </div>
+                            </>
+                        }
+                    />
+                    <Common_Section
+                        className="xp"
+                        bigger_side="right"
+                        left={
+                            <>
+                                <div className="afl_photo">
+                                    <img src="/about_me/sit_compleja.jpeg" alt="Alejandra Fripp Lozano - Foto" className="" />
+                                </div>
+
+                            </>
+                        }
+                        right={
+                            <>
+                                <div className="xp_content">
+                                    <h2 className="xp_title">Más de 8 años abordando situaciones complejas en escuelas.</h2>
+                                    <p className="xp_text">
+                                        Soy parte del equipo técnico que acompaña y asesora a directivos y docentes, de instituciones educativas tanto públicas como privadas, en la gestión de situaciones complejas y de alta sensibilidad.
+                                    </p>
+                                    <p className="xp_text">
+                                        Brindamos orientación en la aplicación de protocolos de actuación, contención emocional y abordajes con un enfoque humano y preventivo ante casos vinculados a violencia, vulneración de derechos, salud mental, consumos problemáticos y conflictos familiares.
+                                    </p>
+                                </div>
+
+                            </>
+                        }
+                    />
                 </div>
+                <Mini_Section
+                    className="quote_container"
+                    content={
+                        <>
+                            <div>
+                                <h3 className="quote">
+                                    "Considero que la docencia y el grafoanálisis van muy de la mano [...] en la escuela aprendemos cómo situar el lápiz en el espacio de la hoja, las letras, damos nuestros primeros grafismos y comenzamos a socializar con otros por fuera de nuestra familia... "
+                                </h3>
+                                <p className="hidden_mobile quote_context">
+                                    La escuela y el aula nos presentan la vida en sociedad y en ese contexto aprendemos a escribir. A lo largo de los años, escribimos más y más mientras nuestra personalidad se forja.
+                                    Solo con la predisposición de trazar, una hoja y un lápiz, el grafoanálisis permite conocer el perfil psicológico del escribiente y así brindar más herramientas para mejorar su vida en diversos aspectos.
+                                </p>
+                            </div>
+
+                        </>
+                    }
+                />
+
+                <Core_Values_Section />
                 <Common_Section
+                    className="radio_section"
                     left={
                         <>
                             <div className="radio_text">
 
-                                <a href="https://radiocerofm.com/" target="_blank" className="expand_animation">
-                                    <img src="./about_me/ahora_cero_radio.png" className="radio_logo"></img>
+                                <a href="https://radiocerofm.com/" target="_blank" className="radiocero">
+                                    <img src="/about_me/ahora_cero_radio.png" className="radio_logo expand_animation"></img>
                                 </a>
-                                <a href="https://radiocerofm.com/" target="_blank" className="expand_animation">
-                                    <img src="./about_me/digamos_todo.jpg" className="radio_logo"></img>
+                                <a href="https://radiocerofm.com/" target="_blank" className="digamostodo">
+                                    <img src="/about_me/digamos_todo.jpg" className="radio_logo expand_animation"></img>
                                 </a>
 
-                                
-                                <h2>
-                                    En el programa Digamos Todo podés escuchar mi columna de ESI.
+                                <h2 className="title">
+                                    Te invito a escuchar mi columna en el programa de radio Digamos Todo.
                                 </h2>
-                                <p>
-                                    Un espacio donde traemos a la luz diversas problemáticas cotidianas relacionadas con la salud de las personas.
+                                <p className="context">
+                                    Aquí construimos un espacio para traer a la luz diversas problemáticas cotidianas relacionadas con la educación sexual integral de las personas.
                                 </p>
                             </div>
 
@@ -237,7 +268,7 @@ const About_me = () => {
                     }
                     right={
                         <>
-                            <ReactPlayer src='https://www.youtube.com/watch?v=VZhLL__kmQ0'
+                            <ReactPlayer src='https://www.youtube.com/watch?v=dohC9zHRsiI&t=6s'
                                 controls={false}
                                 style={{
                                     width: "100%",
@@ -249,7 +280,9 @@ const About_me = () => {
                         </>
                     }
                 />
+                <div className="mini_divider"></div>
             </div>
+
             <Pre_footer />
         </main >
     );

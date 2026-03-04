@@ -1,21 +1,38 @@
-import "./Common_Section.css";
+import "./common_section.css";
 
 type CommonSectionProps = {
-    left: React.ReactNode;
-    right: React.ReactNode;
+    id?: string,
+    full_content?: React.ReactNode;
+    left?: React.ReactNode;
+    right?: React.ReactNode;
+    className?: string;
     bigger_side?: "left" | "right";
 };
 
-const Common_Section = ({ left, right, bigger_side }: CommonSectionProps) => {
+const Common_Section = ({ id, left, right, bigger_side, full_content, className}: CommonSectionProps) => {
     return (
-        <div className="content_section">
-            <div className={bigger_side=="left" ? "left_side bigger_side" : "left_side smaller_side" }>
-                {left}
-            </div>
-
-            <div className={bigger_side=="right" ? "right_side bigger_side" : "right_side smaller_side" }>
-                {right}
-            </div>
+        <div className={"common_section " + className} id={id}>
+            {full_content && (
+                <>
+                    <div className="full_content">
+                        {full_content}
+                    </div>
+                </>
+            )}
+            {left && (
+                <>
+                    <div className={bigger_side == "left" ? "side left_side bigger_side" : "side left_side smaller_side"}>
+                        {left}
+                    </div>
+                </>
+            )}
+            {right && (
+                <>
+                    <div className={bigger_side == "right" ? "side right_side bigger_side" : "side right_side smaller_side"}>
+                        {right}
+                    </div>
+                </>
+            )}
         </div>
     );
 };
