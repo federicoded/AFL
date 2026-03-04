@@ -1,0 +1,128 @@
+.pre_footer_container {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 3rem 0;
+
+    .contact_info_container {
+        margin: 0;
+        padding: 2rem;
+        height: fit-content;
+        gap: 3rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            width: 100%;
+            transition: 0.2s;
+        }
+
+        li {
+            background-color: white;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 1rem 1rem;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+            h3 {
+                margin: 0;
+                font-size: 0.7rem;
+                font-weight: 550;
+                text-align: left;
+                color: #034aac;
+            }
+
+            p {
+                font-size: 1rem;
+                margin: 0;
+                font-style: italic;
+                text-decoration: underline;
+            }
+
+        }
+
+        a:active {
+            scale: 0.9;
+        }
+
+    }
+}
+
+/* Tablets verticales / intermedio */
+@media (min-aspect-ratio: 67/89) {
+    .pre_footer_container {
+
+        .contact_info_container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+/* Pantallas cuadradas */
+@media (min-aspect-ratio: 1/1) {
+
+    .pre_footer_container {
+        .contact_info_container {
+            li {
+                padding: 1.5rem;
+
+                h3 {
+                    font-size: 1.8rem;
+                    font-weight: 550;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+            }
+
+        }
+    }
+}
+
+/* Desktop wide */
+@media (min-aspect-ratio: 38/29) {
+    .pre_footer_container {
+        display: flex;
+        justify-content: center;
+
+        .contact_info_container {
+            width: 80%;
+
+            a {
+                min-width: fit-content;
+                width: 30%;
+                transition: 0.2s;
+
+                li {
+                    background-color: white;
+                    width: 100%;
+                    text-align: left;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                    }
+
+                }
+            }
+
+
+
+        }
+    }
+
+
+
+}

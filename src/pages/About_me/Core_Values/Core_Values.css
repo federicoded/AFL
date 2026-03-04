@@ -1,0 +1,56 @@
+.core_values {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 5rem 0;
+        align-items: center;
+        gap: 2rem;
+
+        li {
+            box-sizing: border-box;
+            width: 90%;
+            background-color: #FFF;
+            box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+            padding: 0;
+
+            h3 {
+                margin: 0;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.5rem 1rem;
+            }
+
+            .value_description_container {
+                background-color: #f5f6fce7;
+                margin: 0;
+                box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+                p {
+                    font-weight: 550;
+                    padding: 1rem;
+                    animation: fade 0.6s ease-in;
+                }
+            }
+        }
+    }
+
+    .value_icon {
+        height: 2.5rem;
+        box-sizing: border-box;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(1.5rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

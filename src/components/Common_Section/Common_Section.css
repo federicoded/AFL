@@ -1,0 +1,19 @@
+.common_section {
+    position: relative;
+    height: auto;
+    color: #001e46;
+    display: flex;
+    box-sizing: border-box;
+
+    .full_content {
+        width: 100%;
+    }
+
+    .full_content,
+    .right_side,
+    .left_side {
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+    }
+}
