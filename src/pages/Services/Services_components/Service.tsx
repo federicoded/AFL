@@ -113,6 +113,7 @@ const Service = ({ service_id, service_title, bg_image, slide_1_items, cards_con
                     </div>
                 </SwiperSlide>
             </Swiper>
+            
         </>
     )
 }

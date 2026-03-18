@@ -168,6 +168,10 @@ div {
 	box-sizing: border-box;
 }
 
+.mini_divider {
+	height: 6rem;
+	background: #FFF;
+}
 
 /* Tablets verticales / intermedio */
 @media (min-aspect-ratio: 67/89) {

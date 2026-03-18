@@ -7,22 +7,18 @@ import 'swiper/css/pagination';
 import "swiper/css/navigation";
 
 type CarouselItem = {
-    /// definimos cómo debe ser el item del menú, cada uno tiene una etiqueta y puede tener opcionalmente un submenú
-    // Type es como una clase pero no se instancia ni tiene lógica, solo se usa para definir tipos de datos.
     question: string;
     image_link: string;
     image_alt?: string;
     background_color: string;
-
 };
 
 const CAR_ITEMS: CarouselItem[] = [
     { question: "¿Necesitás ayuda para definir tu futuro académico?", image_link: "/home/home_slider/asesoramiento.png", image_alt: "alt missing", background_color: "#034aac" },
     { question: "¿Deseas cambiar de profesión pero no sabes cómo dar el primer paso?", image_link: "/home/home_slider/subiendo.png", image_alt: "alt missing", background_color: "#000b67" },
-    { question: "¿Observas cambios en la escritura que llaman tu atención?", image_link: "/home/home_slider/nina_escribiendo.png", image_alt: "alt missing", background_color: "#046af8" },
+    { question: "¿Observas trazos que llaman tu atención?", image_link: "/home/home_slider/nina_escribiendo.png", image_alt: "alt missing", background_color: "#046af8" },
     { question: "¿Querés descubrir tus verdaderas aptitudes y motivaciones?", image_link: "/home/home_slider/objetivos.png", image_alt: "alt missing", background_color: "#000a4e" },
-    { question: "¿Querés saber qué dice tu firma manuscrita sobre tí?", image_link: "/home/home_slider/signing.png", image_alt: "alt missing", background_color: "#034aac" },
-    { question: "¿Morbi eleifend metus sed dolor mollis, imperdiet scelerisque?", image_link: "/home/home_slider/nina_escribiendo.png", image_alt: "alt missing", background_color: "#000a4e" },
+    { question: "¿Querés saber qué dice tu firma sobre tí?", image_link: "/home/home_slider/signing.png", image_alt: "alt missing", background_color: "#034aac" },
 ];
 
 type CarouselProps = {

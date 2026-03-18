@@ -16,7 +16,8 @@ const Adults = () => {
                 service_title="Reeducación de la escritura"
                 bg_image="/services/lady_writing.png"
                 slide_1_items={[
-                    "Identificación de trastornos de la escritura a partir de la detección de anomalías en los grafismos",
+                    "Realización de informe grafopsicológico inicial",
+                   /* "Identificación de trastornos de la escritura a partir de la detección de anomalías en los grafismos",*/
                     "Modificación del gesto gráfico mediante plan de actuación",
                     "Plan con ejercicios específicos personalizados",
                     "Reuniones de seguimiento, idividuales y con familiares directos",
@@ -62,7 +63,7 @@ const Adults = () => {
                 slide_1_items={[
                     "Estudio de la personalidad a través del análisis de la escritura manuscrita",
                     "Análisis de grafismos (movimiento, espacio, forma)",
-                    "Resultados a partir de las 3 semanas",
+                    "Informes a partir de las 3 semanas",
                     "Orientado a personas de todas las edades",
                     "Presencial o virtual",
                 ]}
@@ -104,8 +105,8 @@ const Adults = () => {
                 service_title="Orientación vocacional y profesional"
                 bg_image="/services/prof_orientation.png"
                 slide_1_items={[
+                    "Entrevista y realización de tests",
                     "Identificación de aptitudes y actitudes que complementan las características psicológicas",
-                    "Descubrimiento de objetivos que guían la autorrealización",
                     "Determinación de opciones de carreras o profesiones afines del perfil del consultante",
                     "Presencial o Virtual",
                 ]}
@@ -133,7 +134,7 @@ const Adults = () => {
                         icon_link: "/services/goal.svg",
                         title: "Encuentro final",
                         items: [
-                            "Entrega de informe psicotécnico con descripción del perfil psicológico del consultante y una propuesta estratégica de carreras o profesiones afines basadas en sus aptitudes.",
+                            "Entrega de informe psicografológico con descripción del perfil psicológico del consultante y una propuesta estratégica de carreras o profesiones afines basadas en sus aptitudes.",
                         ]
                     },
                 ]}
