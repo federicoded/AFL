@@ -47,8 +47,10 @@ const Carousel = ({ onClick_Scroll }: CarouselProps) => {
                     >
                         <li
                             className="question_box" style={{ background: item.background_color }}>
-                            <h1 className="qustn">{item.question}</h1>
-                            <button onClick={onClick_Scroll}>Contactame</button>
+                            <div className="question_box_box">
+                                <h1 className="qustn">{item.question}</h1>
+                                <button onClick={onClick_Scroll}>Contactame</button>
+                            </div>
                         </li>
                         <li className="img_box">
                             <img src={item.image_link} alt={item.image_alt} className="" />

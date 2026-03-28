@@ -46,7 +46,7 @@
 
                 .service_items {
 
-                    p {
+                    .item {
                         text-align: left;
                         font-size: 1rem;
                         line-height: 1.1rem;
@@ -77,7 +77,7 @@
                         text-shadow: none;
                         box-shadow: 0.3rem 0.3rem 0.5rem 0.1rem #000000a7;
 
-                        h3 {
+                        .service_card_title {
                             margin: 0;
                             font-size: 1.2rem;
                         }
@@ -88,12 +88,12 @@
                         }
 
                         .card_list {
-                            padding:0;
+                            padding: 0;
                             text-align: left;
                             font-size: 1rem;
                             line-height: 1rem;
 
-                            li {
+                            .card_list_item {
                                 font-weight: 550;
                                 margin-top: 0.2rem;
                                 margin-bottom: 0.2rem;
@@ -110,11 +110,11 @@
     .service_title {
         font-size: 2rem;
         margin: 1rem;
-        padding-top:2rem;
+        padding-top: 2rem;
     }
 }
 
-@media (min-aspect-ratio: 38/29) {
+@media (min-aspect-ratio: 1/1) {
     .service_page {
         padding: 0;
 
@@ -160,13 +160,18 @@
                         align-items: center;
                     }
 
+                    .service_items {
 
-                    p {
-                        text-align: left;
-                        font-size: 1.5rem;
-                        padding: 0;
-                        margin: 0.4rem;
+                        .item {
+                            text-align: left;
+                            font-size: 1.3rem;
+                            line-height: 1.6rem;
+                            padding: 0;
+                            margin: 0.4rem;
+                        }
                     }
+
+                    
 
                     .service_cards_container {
                         list-style: none;
@@ -179,26 +184,29 @@
                         .service_card {
                             background-color: #FFF;
                             border-radius: 1rem;
-                            padding: 0.5rem;
+                            padding: 1rem;
                             width: 30%;
                             color: #01295f;
                             text-shadow: none;
                             box-shadow: 0.3rem 0.3rem 0.5rem 0.1rem #000000a7;
 
                             .card_icon {
-                                width: 15%;
+                                width: 13%;
 
                             }
 
                             .card_list {
                                 text-align: left;
+                                padding: 1.5rem;
                                 font-size: 1.1rem;
                                 line-height: 1.1rem;
+                                list-style: disc;
 
-                                li {
+                                .card_list_item {
                                     font-weight: 550;
                                     margin-top: 0.5rem;
                                     margin-bottom: 0.5rem;
+                                    font-size: 1rem;
                                 }
                             }
                         }

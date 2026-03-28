@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import "./Header_Dropdown.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 type SubmenuOption = {
     title: string;

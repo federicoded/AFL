@@ -18,7 +18,7 @@ const Home = () => {
 
   useScrollToTag();
   return (
-    <main className="home_page">
+    <main className="page home_page">
       <Carousel onClick_Scroll={scrollToContactMe} />
 
       <Contact_me ref={contact_me_ref} id="contact_me" />

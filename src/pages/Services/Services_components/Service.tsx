@@ -1,5 +1,3 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'; import 'swiper/css';
 import "swiper/css/parallax";
 import 'swiper/css/pagination';
@@ -31,14 +29,14 @@ const Cards = ({ cards_content }: { cards_content: CardContent[] }) => {
                         <>
                             <li className="service_card">
                                 <img src={card.icon_link} className='card_icon'></img>
-                                <h3>
+                                <h3 className="service_card_title">
                                     {card.title}
                                 </h3>
 
                                 <ul className='card_list'>
                                     {card.items.map((item) => (
                                         <>
-                                            <li>{item}</li>
+                                            <li className='card_list_item'>{item}</li>
                                         </>
                                     ))}
                                 </ul>
@@ -77,11 +75,11 @@ const Service = ({ service_id, service_title, bg_image, slide_1_items, cards_con
                     <div className="slide_content_bg" >
                         <div className="slide_content" >
                             <ul style={{ width: "fit-content" }}>
-                                {slide_1_items?.map((item, index) => (
+                                {slide_1_items?.map((item) => (
                                     <>
                                         <li className='service_items'>
                                             <p className='item'>
-                                                {slide_1_items[index]}
+                                                {item}
                                             </p>
                                         </li>
                                     </>
