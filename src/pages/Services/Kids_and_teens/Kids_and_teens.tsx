@@ -14,7 +14,7 @@ const Kids_and_teens = () => {
                 <Service
                     service_id="rehabilitacion_escritura"
                     service_title="Entrenamiento de la escritura"
-                    bg_image="/services/kid_writing.png"
+                    bg_image="services/kid_writing.png"
                     slide_1_items={["Identificación de la disgrafía y otros trastornos de la escritura", 
                         "Modificación del gesto gráfico mediante plan de actuación", 
                         "Plan con ejercicios personalizados", 
@@ -22,7 +22,7 @@ const Kids_and_teens = () => {
                         "100% Presencial"]}
                     cards_content={[
                         {
-                            icon_link: "/services/meeting.svg",
+                            icon_link: "services/meeting.svg",
                             title: "Reunión inicial",
                             items: [
                                 "Primer encuentro con familiares directos u otros referentes",
@@ -32,7 +32,7 @@ const Kids_and_teens = () => {
                             ]
                         },
                         {
-                            icon_link: "/services/checklist.svg",
+                            icon_link: "services/checklist.svg",
                             title: "Sesiones de seguimiento",
                             items: [
                                 "Individuales y/o con referentes afectivos u otros profesionales.",
@@ -41,7 +41,7 @@ const Kids_and_teens = () => {
                             ]
                         },
                         {
-                            icon_link: "/services/goal.svg",
+                            icon_link: "services/goal.svg",
                             title: "Rehabilitación de la escritura",
                             items: [
                                 "El número de sesiones puede variar según el perfil del consultante",
@@ -55,7 +55,7 @@ const Kids_and_teens = () => {
                 <Service
                     service_id="orientacion_vocacional"
                     service_title="Orientación vocacional para adolescentes"
-                    bg_image="/services/orientacion.png"
+                    bg_image="services/orientacion.png"
                     slide_1_items={[
                         "Entrevista y realización de test",
                         "Detección de aptitudes y actitudes que complementan las características psicológicas.",
@@ -64,7 +64,7 @@ const Kids_and_teens = () => {
                     ]}
                     cards_content={[
                         {
-                            icon_link: "/services/meeting.svg",
+                            icon_link: "services/meeting.svg",
                             title: "Reunión inicial",
                             items: [
                                 "Primer encuentro con familiares directos o referentes",
@@ -74,7 +74,7 @@ const Kids_and_teens = () => {
                             ]
                         },
                         {
-                            icon_link: "/services/checklist.svg",
+                            icon_link: "services/checklist.svg",
                             title: "Encuentros interactivos",
                             items: [
                                 "Proceso no lineal",
@@ -84,7 +84,7 @@ const Kids_and_teens = () => {
                             ]
                         },
                         {
-                            icon_link: "/services/goal.svg",
+                            icon_link: "services/goal.svg",
                             title: "Encuentro final",
                             items: [
                                 "Encuentro final con familiares directos o referentes",
@@ -97,7 +97,7 @@ const Kids_and_teens = () => {
                 <Service
                     service_id="neurodivergencias"
                     service_title="Detección de neurodivergencias "
-                    bg_image="/services/neurodivergencia.png"
+                    bg_image="services/neurodivergencia.png"
                     slide_1_items={[
                         "Identificación de la disgrafía y otros trastornos de la escritura",
                         "Práctica del gesto gráfico mediante plan de actuación",
@@ -106,7 +106,7 @@ const Kids_and_teens = () => {
                         "100% Presencial"]}
                     cards_content={[
                         {
-                            icon_link: "/services/meeting.svg",
+                            icon_link: "services/meeting.svg",
                             title: "Reunión inicial",
                             items: [
                                 "Primer encuentro con familiares directos o profesionales interesados",
@@ -116,7 +116,7 @@ const Kids_and_teens = () => {
                             ]
                         },
                         {
-                            icon_link: "/services/checklist.svg",
+                            icon_link: "services/checklist.svg",
                             title: "Reuniones con consultante",
                             items: [
                                 "Encuentros semanales con el menor para la toma de muestras grafológicas",
@@ -126,7 +126,7 @@ const Kids_and_teens = () => {
                             ]
                         },
                         {
-                            icon_link: "/services/goal.svg",
+                            icon_link: "services/goal.svg",
                             title: "Reunión final",
                             items: [
                                 "Encuentro final con familiares directos o profesionales",

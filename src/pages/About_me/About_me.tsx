@@ -71,7 +71,7 @@ const About_me = () => {
                                 </svg>
 
                                 <div className="afl_photo">
-                                    <img src="/afl_persona2.png" alt="Foto de Alejandra Fripp Lozano" className="" />
+                                    <img src="afl_persona2.png" alt="Foto de Alejandra Fripp Lozano" className="" />
                                 </div>
 
                             </div>
@@ -167,7 +167,7 @@ const About_me = () => {
                                     </g>
                                 </svg>
                                 <div className="flower_photo">
-                                    <img src="/about_me/presentando_01.jpg" alt="Alejandra Fripp Lozano - Foto" className="" />
+                                    <img src="about_me/presentando_01.jpg" alt="Alejandra Fripp Lozano - Foto" className="" />
                                 </div>
                             </>
 
@@ -181,7 +181,7 @@ const About_me = () => {
                         left={
                             <>
                                 <div className="afl_photo">
-                                    <img src="/about_me/capacitando.jpeg" alt="Alejandra Fripp Lozano - Foto" className="" />
+                                    <img src="about_me/capacitando.jpeg" alt="Alejandra Fripp Lozano - Foto" className="" />
                                 </div>
                             </>
                         }
@@ -203,7 +203,7 @@ const About_me = () => {
                         left={
                             <>
                                 <div className="afl_photo">
-                                    <img src="/about_me/sit_compleja.jpeg" alt="Alejandra Fripp Lozano - Foto" className="" />
+                                    <img src="about_me/sit_compleja.jpeg" alt="Alejandra Fripp Lozano - Foto" className="" />
                                 </div>
 
                             </>
@@ -250,10 +250,10 @@ const About_me = () => {
                             <div className="radio_text">
 
                                 <a href="https://radiocerofm.com/" target="_blank" className="radiocero">
-                                    <img src="/about_me/ahora_cero_radio.png" className="radio_logo expand_animation"></img>
+                                    <img src="about_me/ahora_cero_radio.png" className="radio_logo expand_animation"></img>
                                 </a>
                                 <a href="https://radiocerofm.com/" target="_blank" className="digamostodo">
-                                    <img src="/about_me/digamos_todo.jpg" className="radio_logo expand_animation"></img>
+                                    <img src="about_me/digamos_todo.jpg" className="radio_logo expand_animation"></img>
                                 </a>
 
                                 <h2 className="title">

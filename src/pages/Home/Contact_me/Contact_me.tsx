@@ -48,7 +48,7 @@ const Contact_me = forwardRef<HTMLHeadingElement, ContactMeProps>(({ id }, ref) 
 
                 }
                 <div className="cm_photo link_target"  ref={aspectRatio <= 1 ? ref : null} id={aspectRatio <= 1 ? id : undefined}>
-                    <img src="/afl_persona.png" alt="Alejandra Fripp Lozano - Foto"></img>
+                    <img src="afl_persona.png" alt="Alejandra Fripp Lozano - Foto"></img>
                 </div>
             </div>
             <div className="cm_side texts">

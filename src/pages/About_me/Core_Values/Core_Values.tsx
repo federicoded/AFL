@@ -61,7 +61,7 @@ const Core_Values_Section = () => {
                                     aria-expanded={openIndex === index}
                                 >
                                     {value.name}
-                                    <img src={"/about_me/" + value.icon + ".svg"} className="value_icon" />
+                                    <img src={"about_me/" + value.icon + ".svg"} className="value_icon" />
                                 </h3>
                                 {openIndex === index && (
                                     <div className="value_description_container">

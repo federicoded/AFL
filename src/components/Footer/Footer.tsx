@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <footer className="footer">
-            <img src="/afl_logo_footer.png" alt="Logo de AFL Grafoanálisis" className="logo-footer" />
+            <img src="afl_logo_footer.png" alt="Logo de AFL Grafoanálisis" className="logo-footer" />
 
             <p className="footer-text">
                 <span>© {new Date().getFullYear()} AFL Grafoanálisis.</span>

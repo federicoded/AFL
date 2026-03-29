@@ -14,7 +14,7 @@ const Adults = () => {
             <Service
                 service_id="reeducacion_escritura"
                 service_title="Reeducación de la escritura"
-                bg_image="/services/lady_writing.png"
+                bg_image="services/lady_writing.png"
                 slide_1_items={[
                     "Realización de informe grafopsicológico inicial",
                    /* "Identificación de trastornos de la escritura a partir de la detección de anomalías en los grafismos",*/
@@ -25,7 +25,7 @@ const Adults = () => {
                 ]}
                 cards_content={[
                     {
-                        icon_link: "/services/meeting.svg",
+                        icon_link: "services/meeting.svg",
                         title: "Reunión inicial",
                         items: [
                             "Primer encuentro con consultante y/o con familiares directos",
@@ -35,7 +35,7 @@ const Adults = () => {
                         ]
                     },
                     {
-                        icon_link: "/services/checklist.svg",
+                        icon_link: "services/checklist.svg",
                         title: "Sesiones de seguimiento",
                         items: [
                             "Individuales y/o con familiares directos.",
@@ -44,7 +44,7 @@ const Adults = () => {
                         ]
                     },
                     {
-                        icon_link: "/services/goal.svg",
+                        icon_link: "services/goal.svg",
                         title: "Rehabilitación de la escritura",
                         items: [
                             "El número de sesiones puede variar según el perfil del consultante",
@@ -59,7 +59,7 @@ const Adults = () => {
             <Service
                 service_id="perfil_psicologico"
                 service_title="Perfil psicológico"
-                bg_image="/services/perfil_psico.png"
+                bg_image="services/perfil_psico.png"
                 slide_1_items={[
                     "Estudio de la personalidad a través del análisis de la escritura manuscrita",
                     "Análisis de grafismos (movimiento, espacio, forma)",
@@ -69,7 +69,7 @@ const Adults = () => {
                 ]}
                 cards_content={[
                     {
-                        icon_link: "/services/meeting.svg",
+                        icon_link: "services/meeting.svg",
                         title: "Reunión inicial",
                         items: [
                             "Primer encuentro con familiares directos o profesionales interesados",
@@ -79,7 +79,7 @@ const Adults = () => {
                         ]
                     },
                     {
-                        icon_link: "/services/checklist.svg",
+                        icon_link: "services/checklist.svg",
                         title: "Reuniones con consultante",
                         items: [
                             "2 encuentros dedicados a la toma de muestras grafológicas",
@@ -89,7 +89,7 @@ const Adults = () => {
                         ]
                     },
                     {
-                        icon_link: "/services/goal.svg",
+                        icon_link: "services/goal.svg",
                         title: "Reunión final",
                         items: [
                             "Encuentro final con familiares directos o profesionales",
@@ -103,7 +103,7 @@ const Adults = () => {
             <Service
                 service_id="orientacion_vocacional"
                 service_title="Orientación vocacional y profesional"
-                bg_image="/services/prof_orientation.png"
+                bg_image="services/prof_orientation.png"
                 slide_1_items={[
                     "Entrevista y realización de tests",
                     "Identificación de aptitudes y actitudes que complementan las características psicológicas",
@@ -112,7 +112,7 @@ const Adults = () => {
                 ]}
                 cards_content={[
                     {
-                        icon_link: "/services/meeting.svg",
+                        icon_link: "services/meeting.svg",
                         title: "Reunión inicial",
                         items: [
                             "Primer encuentro para dialogar necesidades",
@@ -121,7 +121,7 @@ const Adults = () => {
                         ]
                     },
                     {
-                        icon_link: "/services/checklist.svg",
+                        icon_link: "services/checklist.svg",
                         title: "Reuniones de acompañamiento",
                         items: [
                             "Proceso no lineal",
@@ -131,7 +131,7 @@ const Adults = () => {
                         ]
                     },
                     {
-                        icon_link: "/services/goal.svg",
+                        icon_link: "services/goal.svg",
                         title: "Encuentro final",
                         items: [
                             "Entrega de informe psicografológico con descripción del perfil psicológico del consultante y una propuesta estratégica de carreras o profesiones afines basadas en sus aptitudes.",

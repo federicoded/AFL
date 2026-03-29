@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://federicoded.github.io/afl",
+  "homepage": "https://federicoded.github.io/AFL",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
