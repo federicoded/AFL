@@ -15,15 +15,15 @@
     }
 }
 
-
-/* Tablets verticales / intermedio */
-@media (min-aspect-ratio: 67/89) {
-     .faq_page {
+/* Pantallas cuadradas */
+@media (min-aspect-ratio: 1/1) {
+    .faq_page {
 
         .faq_container {
             width: 100%;
             min-height: 67dvh;
             margin: auto;
+            padding: 0 10rem;
         }
 
         h1 {
@@ -33,9 +33,6 @@
         }
     }
 }
-
-/* Pantallas cuadradas */
-@media (min-aspect-ratio: 1/1) {}
 
 /* Desktop wide */
 @media (min-aspect-ratio: 38/29) {}

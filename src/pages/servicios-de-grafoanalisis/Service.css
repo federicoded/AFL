@@ -6,6 +6,15 @@
         height: auto;
         overflow: hidden;
 
+        .service_contact_me_button{
+            width: "fit-content";
+            color: #01295f;
+        }
+        .service_contact_me_button:hover{
+            background-color: #01295f;
+            color: #FFF;
+        }
+
         .parallax-bg {
             position: absolute;
             top: 0;

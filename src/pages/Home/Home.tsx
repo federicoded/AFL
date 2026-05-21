@@ -21,7 +21,7 @@ const Home = () => {
     <main className="page home_page">
       <Carousel onClick_Scroll={scrollToContactMe} />
 
-      <Contact_me ref={contact_me_ref} id="contact_me" />
+      <Contact_me ref={contact_me_ref} id="contactame" />
 
       <Pre_footer />
     </main>

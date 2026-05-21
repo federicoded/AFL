@@ -104,8 +104,8 @@ const Service = ({ service_id, service_title, bg_image, slide_1_items, cards_con
                     <div className="slide_content_bg" >
                         <div className='slide_content'>
                             <h2> ¿Te gustaría conocer más? </h2>
-                            <Link to="/#contact_me">
-                                <button style={{ width: "fit-content" }}>Contactame</button>
+                            <Link to="/#contactame">
+                                <button className="service_contact_me_button" style={{ }}>Contactame</button>
                             </Link>
                         </div>
                     </div>

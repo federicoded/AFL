@@ -40,6 +40,13 @@ body {
 }
 
 .body {
+	.page_title{
+		font-size: 0.6rem;
+		padding:0.2rem;
+		margin: 0;
+		background-color: #FFF;
+	}
+
 	height: auto;
 	overflow: auto;
 	color: #01295f;

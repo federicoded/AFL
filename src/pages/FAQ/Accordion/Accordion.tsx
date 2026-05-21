@@ -36,7 +36,7 @@ const Accordion = ({ items }: AccordionProps) => {
 
                     {openIndex === index && (
                         <div className="accordion-content">
-                            <p>
+                            <p className="accordion-answer">
                                 {item.answer}
                             </p>
                         </div>

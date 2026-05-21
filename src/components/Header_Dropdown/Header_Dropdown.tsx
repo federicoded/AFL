@@ -21,15 +21,15 @@ const menuItems: MenuItem[] = [
         submenu: [
             {
                 title: "Entrenamiento de la escritura",
-                link: "/services/nya#rehabilitacion_escritura"
+                link: "/servicios-de-grafoanalisis/para-niños-y-adolescentes#rehabilitacion_escritura"
             },
             {
                 title: "Orientación vocacional",
-                link: "/services/nya#orientacion_vocacional"
+                link: "/servicios-de-grafoanalisis/para-niños-y-adolescentes#orientacion_vocacional"
             },
             {
                 title: "Detección de neurodivergencias",
-                link: "/services/nya#neurodivergencias"
+                link: "/servicios-de-grafoanalisis/para-niños-y-adolescentes#neurodivergencias"
             },
         ]
     },
@@ -38,15 +38,15 @@ const menuItems: MenuItem[] = [
         submenu: [
             {
                 title: "Reeducación de la escritura",
-                link: "/services/adlts#reeducacion_escritura"
+                link: "/servicios-de-grafoanalisis/para-jovenes-y-adultos#reeducacion_escritura"
             },
             {
                 title: "Perfil Psicológico",
-                link: "/services/adlts#perfil_psicologico"
+                link: "/servicios-de-grafoanalisis/para-jovenes-y-adultos#perfil_psicologico"
             },
             {
                 title: "Orientacion Vocacional y Profesional",
-                link: "/services/adlts#orientacion_vocacional"
+                link: "/servicios-de-grafoanalisis/para-jovenes-y-adultos#orientacion_vocacional"
             },
 
         ]
